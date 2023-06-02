@@ -1,4 +1,5 @@
 #include "Recurrent_linked_list.h"
+#define vprintf(...) printf(__VA_ARGS__, "%d-%s-%s",__LINE__, __DATE__,__FILE__)
 
 int main()
 {
@@ -13,9 +14,9 @@ int main()
     list.show_list();
     if(list.isCircle())
     {
-        std::cout<<"exit"<<std::endl;
+        vprintf("it is a circle");
     }else
     {
-        std::cout<<"do not exit"<<std::endl;
+        vprintf("it is not a circle");
     }
 }
